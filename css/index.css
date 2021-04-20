@@ -1,3 +1,8 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
 body {
     margin: 0;
 }
@@ -129,13 +134,80 @@ body {
     border: 1px solid black;
     border-radius: 15px;
     padding: 15px;
-    height: 300px;
+    min-height: 300px;
     margin-top: 50px;
+}
+
+.box-img {
+    position: absolute;
+    /* margin-top: -5px; */
+    top: 0;
+    left: 50%;
+    margin-top: -30px;
+    z-index: 2;
+    background-color: white;
+    transform: translate(-50%, 0);
+    right: 50;
+}
+
+.second-section {
+    background-color: #009799;
+    transform: skew(0deg,-4deg);
+    position: relative;
+}
+
+.second-section-width {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.second-section-header {
+    color: white;
+}
+
+.bend {
+    transform: skew(0deg,-4deg);
+}
+
+.reverse-bend {
+    transform: skew(0deg,4deg);
+}
+
+.second-section-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    border-bottom: 1px solid white;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.second-section-list-item {
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.bush {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: -50px;
+    margin-left: 15px;
+}
+
+.bush-img {
+    height: 80px;
 }
 
 @media all and (max-width: 768px) { 
     .no-display-tablet {
         display: none !important;
+    }
+
+    .second-section-list {
+        border-bottom: 0px solid white;
     }
 
     .display-tablet {
