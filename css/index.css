@@ -82,9 +82,23 @@ body {
     background-color: #00989a;
 }
 
+.menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: aliceblue;
+    height: 100vh;
+    width: 0;
+    overflow: hidden;
+    transition: width 0.5s;
+    text-overflow: clip;
+    white-space: nowrap;
+}
+
 @media all and (max-width: 768px) { 
     .no-display-tablet {
-        display: none;
+        display: none !important;
     }
 
     .display-tablet {
