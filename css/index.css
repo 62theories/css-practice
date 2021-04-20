@@ -13,6 +13,10 @@ body {
     background-color: #fff;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 .d-flex {
@@ -94,6 +98,39 @@ body {
     transition: width 0.5s;
     text-overflow: clip;
     white-space: nowrap;
+}
+
+.first-section {
+    margin-right: 15px;
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.first-section-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.list-display {
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.box {
+    position: relative;
+    max-width: 240px;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 15px;
+    height: 300px;
+    margin-top: 50px;
 }
 
 @media all and (max-width: 768px) { 
